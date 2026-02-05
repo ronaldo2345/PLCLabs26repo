@@ -8,7 +8,7 @@ sgnGuards x | x < 0 = -1
             | x == 0 = 0
             | otherwise = 1
 
-
+--grade is func name and score is parameter
 grade score =
  if score >= 90
   then "A"
@@ -22,5 +22,5 @@ grade score =
 main = do
     putStrLn "Please enter a number"
     input <- getLine 
-    let x = (read input :: Int)
-    putStrLn( show (grade x) )
+    let x = (read input :: Int) -- user defines x
+    putStrLn( show (grade x) ) -- calls grade and x is parameter
